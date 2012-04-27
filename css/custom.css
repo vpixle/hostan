@@ -1,0 +1,174 @@
+/***************************************
+ *  Animated loader
+ ***************************************
+.ui-loader {
+  background: #CB5909;
+  border-color: #FFFBB1;
+  opacity: .8;
+  filter: Alpha(Opacity=80);
+  text-shadow: 2px 2px #000;
+  color: #FFFBB1 ;
+}
+.ui-icon-loading {
+  background-image: url(../themes/images/ajax-loader.png);
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-size: 35px 35px;
+} */
+/****************************************
+* Logo
+***************************************
+.logo {
+  background-image:url(../assets/preloader.png);
+  width:35px;
+  height:35px;
+  left:29px;
+  top:0;
+  position:absolute;
+  z-index:999;
+}*/
+
+/***************************************
+ *  Item Box
+ ****************************************/
+
+.item {
+  padding: 1em;
+  margin: 0em 0em 1em;
+  background :#fff;
+  font-size: 90%;
+  filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eeeeee');
+  background-image : -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));
+  background-image : -webkit-linear-gradient(top, #ffffff, #eeeeee);
+  background-image :    -moz-linear-gradient(top, #ffffff, #eeeeee);
+  background-image :     -ms-linear-gradient(top, #ffffff, #eeeeee);
+  background-image :      -o-linear-gradient(top, #ffffff, #eeeeee);
+  background-image :         linear-gradient(top, #ffffff, #eeeeee);
+  box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  border-radius: .6em;
+  -moz-border-radius: .6em;
+  -webkit-border-radius: .6em;
+}
+
+/***************************************
+ *  Glyphish NavBar
+ ****************************************/
+.nav-glyphish .ui-btn .ui-btn-inner {
+  padding-top: 40px !important;
+}
+.nav-glyphish .ui-btn .ui-icon {
+  width: 30px!important;
+  height: 30px!important;
+  margin-left: -15px !important;
+  box-shadow: none!important;
+  -moz-box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  -webkit-border-radius: none !important;
+  border-radius: none !important;
+}
+#house .ui-icon      {background: url(../assets/glyph/53-house.png) 50% 50% no-repeat; background-size: 22px 22px;}
+#group .ui-icon      {background: url(../assets/glyph/112-group.png) 50% 50% no-repeat; background-size: 32px 21px;}
+#eye .ui-icon        {background: url(../assets/glyph/12-eye.png) 50% 50% no-repeat; background-size: 24px 16px;}
+#signpost .ui-icon   {background: url(../assets/glyph/60-signpost.png) 50% 50% no-repeat; background-size: 22px 28px;}
+#cabinet .ui-icon    {background: url(../assets/glyph/33-cabinet.png) 50% 50% no-repeat; background-size: 23px 26px;}
+#map-maker .ui-icon  {background: url(../assets/glyph/07-map-marker.png) 50% 50% no-repeat; background-size: 16px 26px;}
+#badge .ui-icon      {background: url(../assets/glyph/108-badge.png) 50% 50% no-repeat; background-size: 16px 26px;}
+#beer-mug .ui-icon   {background: url(../assets/glyph/88-beer-mug.png) 50% 50% no-repeat; background-size: 22px 27px;}
+#star .ui-icon       {background: url(../assets/glyph/28-star.png) 50% 50% no-repeat; background-size: 26px 26px;}
+#navigation .ui-icon {background: url(../assets/glyph/113-navigation.png) 50% 50% no-repeat; background-size: 22px 27px;}
+#map-marker .ui-icon {background: url(../assets/glyph/07-map-marker.png) 50% 50% no-repeat; background-size: 16px 26px;}
+
+/***********************************!
+* jQuery Mobile Framework : drag pagination plugin
+* Copyright (c) Filament Group, Inc
+* Authored by Scott Jehl, scott@filamentgroup.com
+* Dual licensed under the MIT or GPL Version 2 licenses.
+***********************************/
+.ui-pagination {
+  left: 0;
+  width: 100%;
+}
+.ui-pagination, .ui-pagination li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: fixed;
+}
+.ui-pagination li {
+  overflow: hidden;
+  width: 2.5em;
+  height: 4.5em;
+}
+.ui-pagination li a {
+  padding: .7em .4em .7em .45em;
+  opacity: .7;
+  position: absolute;
+  z-index: 999;
+}
+.ui-pagination .ui-pagination-prev {
+  left: 0;
+  top: 150px;
+}
+.ui-pagination .ui-pagination-next {
+  top: 150px;
+  right: 0;
+}
+.ui-pagination .ui-pagination-prev a {
+  right: 0;
+  padding-left: 1.45em;
+}
+.ui-pagination .ui-pagination-next a {
+  left: 0;
+  padding-right: 1.45em;
+}
+.ui-page.ui-page-prev {
+  left: -100%;
+  display: block;
+  overflow: visible;
+}
+.ui-page.ui-page-next {
+  left: 100%;
+  display: block;  
+  overflow: visible;
+}
+.ui-pagination-dragging,
+.ui-pagination-dragging .ui-page,
+.ui-pagination-snapping,
+.ui-pagination-snapping .ui-page {
+  width: 100%;
+}
+/* NOTE: comment this part out if your page is element-heavy!! */
+/*.ui-page * {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+} */
+.ui-pagination-snapping .ui-page {
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -moz-transition: -moz-transform .3s ease-out;
+  -ms-transition: -moz-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
+  transition: transform .3s ease-out;
+}
+
+/************************************* 
+*  Zarovnaný thumbnail/mapa v lisview
+**************************************/
+.ui-li-has-thumb .ui-btn-inner {
+    min-height: 70px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-style:dashed;
+    border-width:1px;
+    border-color:#888;
+}
+/****
+*  Tweak pro custom icon pack
+****/
+.ui-btn-icon-top .ui-icon {margin-top:0px !important;}
